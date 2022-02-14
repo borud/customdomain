@@ -25,7 +25,20 @@ In order to redirect the Go tools to this github repository we need to create an
 </html>
 ```
 
-Substitute for whatever your domain name and package name should be and you now have a custom domain name in your package name.
+Substitute for whatever your domain name, package name and github repository should be and you now have a custom domain name in your package name.
+
+## Using this package
+
+```go
+package main
+
+import "borud.no/customdomain"
+
+func main() {
+  dummy := customdomain.Sometype{}
+  dummy.Hello()
+}
+```
 
 ## Private repositories
 
